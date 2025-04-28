@@ -2,6 +2,7 @@
 import './App.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from './Redux/counter/CounterSlice'
+import Navbar from './components/Navbar'
 
 function App() {
   const count = useSelector((state) => state.counter.value)
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <>
-     
+     <Navbar/>
       <h1>Vite + React</h1>
       <div className="card">
           count is {count}

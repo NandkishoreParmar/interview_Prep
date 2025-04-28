@@ -1,6 +1,7 @@
 import React from "react";
-
-const Navbar = ()=>{
+import { useSelector } from 'react-redux'
+const Navbar = () => {
+  const count = useSelector((state) => state.counter.value)
   return (
     <>
     <div>
