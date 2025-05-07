@@ -18,7 +18,7 @@ function twoSum(arr,k){
 
 function twoPointer(arr,k){
   arr.sort((a,b)=> a-b);
-  console.log(arr)
+  // console.log(arr)
   let left = 0;
   let right = arr.length-1;
   while (left < right){
@@ -34,7 +34,7 @@ function twoPointer(arr,k){
       left ++
     }
   }
-  return console.log("not gettibng any pair")
+  return console.log("not getting any pair")
 }
 twoPointer([1,10,3,5,4],8)
 

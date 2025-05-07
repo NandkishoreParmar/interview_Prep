@@ -1,15 +1,19 @@
 
-function Reverse(name){
-  let words = name.split(" ")
- let left = 0
- let right = words.length-1
- while (left < right){
-  [words[left],words[right]] = [words[right],words[left]]
-  left ++
-  right--
- }
- return words.join(" ")
+function twoPointer(arr,k){
+  // let indexes = []
+  for (let i=0; i<arr.length-1; i++){
+    for (let j=i+1; j<arr.length; j++){
+      let sum = arr[i] + arr[j]
+      if (sum == k){
+        // indexes.push(i,j)
+        return (i,j)
+      }
+    }
+  }
+  return indexes
 }
-let name1 = "the blue is sky"
-console.log(Reverse(name1))
 
+
+
+let ans = twoPointer([1,10,3,5,4],8)
+console.log(ans)
