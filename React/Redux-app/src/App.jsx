@@ -15,7 +15,6 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
           count is {count}
-
    </div>
    <button onClick={()=> dispatch(decrement())}>-</button>
 

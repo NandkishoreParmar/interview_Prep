@@ -15,7 +15,7 @@ function secondHighest(s) {
       }
   }
 
-  return secondMax;
+  return firstMax;
 }
 
 // Example Cases
