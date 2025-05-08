@@ -1,19 +1,26 @@
 
-function twoPointer(arr,k){
-  // let indexes = []
-  for (let i=0; i<arr.length-1; i++){
-    for (let j=i+1; j<arr.length; j++){
-      let sum = arr[i] + arr[j]
-      if (sum == k){
-        // indexes.push(i,j)
-        return (i,j)
+
+function isValid(str){
+  let stack = []
+  let map = {
+    '(':')',
+    '[':']',
+    '{':'}'
+  }
+  for (let char of str){
+    if(map[char]){
+      stack.push(map[char])
+    }else{ 
+      if (char !== stack.pop()){
+        return false
       }
     }
   }
-  return indexes
+  return stack.length == 0
 }
 
 
-
-let ans = twoPointer([1,10,3,5,4],8)
-console.log(ans)
+console.log(isValid("()"));       // true
+console.log(isValid("()[]{}"));   // true
+console.log(isValid("(]"));       // false
+console.log(isValid("([)]"));     // false

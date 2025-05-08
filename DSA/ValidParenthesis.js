@@ -17,10 +17,12 @@ function isValid(s) {
           }
       }
   }
-
+//
   // If stack is empty, all brackets matched
   return stack.length === 0;
 }
+
+
 console.log(isValid("()"));       // true
 console.log(isValid("()[]{}"));   // true
 console.log(isValid("(]"));       // false
