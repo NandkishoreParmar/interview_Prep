@@ -1,26 +1,21 @@
 
 
-function isValid(str){
-  let stack = []
-  let map = {
-    '(':')',
-    '[':']',
-    '{':'}'
-  }
-  for (let char of str){
-    if(map[char]){
-      stack.push(map[char])
-    }else{ 
-      if (char !== stack.pop()){
-        return false
-      }
+let condition = false;
+
+let myPromise = new Promise((resolve,reject)=>{
+
+  setTimeout(() => {
+    if(condition){
+      resolve("Promise is resolved")
+    }else{
+      reject("Promise is rejected")
     }
-  }
-  return stack.length == 0
-}
+  }, 2000);
 
+})
 
-console.log(isValid("()"));       // true
-console.log(isValid("()[]{}"));   // true
-console.log(isValid("(]"));       // false
-console.log(isValid("([)]"));     // false
+myPromise.then((result)=>{
+  console.log(result)
+}).catch((error)=>{
+  console.log(error)
+})
