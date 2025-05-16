@@ -5,6 +5,7 @@ import MyButton from './components/Button'
 import ControlledComponent from './components/ControlledComp';
 import ProductDetails from './components/Product';
 import TodoList from './components/TodoList';
+import Testing from './components/text';
 function App() {
   // const [count, setCount] = useState(0);
 //   const increaseCounter = ()=> {
@@ -23,7 +24,8 @@ function App() {
    <MyButton title={"Decrease Counter"} Counter={DecreaseCounter} />
    <ControlledComponent/> */}
    {/* <ProductDetails/> */}
-   <TodoList/>
+   {/* <TodoList/> */}
+   <Testing/>
    </>
   )
 }

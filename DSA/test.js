@@ -1,21 +1,16 @@
 
+function charCount(str){
+  let charCount = {}
 
-let condition = false;
-
-let myPromise = new Promise((resolve,reject)=>{
-
-  setTimeout(() => {
-    if(condition){
-      resolve("Promise is resolved")
-    }else{
-      reject("Promise is rejected")
+  for(let char of str){
+    if(charCount[char]){
+      charCount[char]++
     }
-  }, 2000);
-
-})
-
-myPromise.then((result)=>{
-  console.log(result)
-}).catch((error)=>{
-  console.log(error)
-})
+    else{
+      charCount[char]=1
+    }
+  }
+  return charCount
+}
+const string = "hello"
+console.log(charCount(string))
