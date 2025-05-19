@@ -1,29 +1,38 @@
 function isValid(s) {
-  const stack = [];
-  const map = {
-      '(': ')',
-      '{': '}',
-      '[': ']'
-  };
-
-  for (let char of s) {
-      if (map[char]) {
-          // If char is an opening bracket, push its corresponding closing bracket
-          stack.push(map[char]);
-      } else {
-          // If char is a closing bracket, check if it matches the top of the stack
-          if (char !== stack.pop()) {
-              return false;
-          }
+  let st = []
+  for (let i = 0; i < s.length; i++) {
+    let ch = s[i];
+    if ((ch == '(') || (ch == '[') || (ch == '{')) {
+      st.push(ch)
+    }
+    else {
+      if (st.length === 0) {
+        return false
       }
+      let temp = st.pop()
+      if (ch == ')' && temp != '(') {
+        return false
+      }
+      if (ch == ']' && temp != '[') {
+        return false
+      }
+      if (ch == '}' && temp != '{') {
+        return false
+      }
+    }
   }
-//
-  // If stack is empty, all brackets matched
-  return stack.length === 0;
+  return st.length === 0
 }
 
+let s = "(((]))"
+console.log(isValid(s))  // false
+console.log(isValid("((("))  // false
+console.log(isValid("()[]{}"))  // true
+console.log(isValid("([{}])"))  // true
+console.log(isValid("}])"))  // false
 
-console.log(isValid("()"));       // true
-console.log(isValid("()[]{}"));   // true
-console.log(isValid("(]"));       // false
-console.log(isValid("([)]"));     // false
+
+
+console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+
+

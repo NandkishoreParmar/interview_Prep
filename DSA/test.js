@@ -1,22 +1,31 @@
-
-
-function secondhighest (arr){
-
-  let firstmax = arr[0];
-  let secondmax = arr[0];
-
-  for (let i=1; i<arr.length; i++){
-    if (arr[i] > firstmax){
-      secondmax = firstmax
-      firstmax = arr[i]
-    }else if (arr[i] > secondmax && arr[i] < firstmax){
-      secondmax = arr[i]
+function isValid(s) {
+  let st = []
+  for (let i = 0; i < s.length; i++) {
+    let ch = s[i];
+    if ((ch == '(') || (ch == '[') || (ch == '{')) {
+      st.push(ch)
+    }
+    else {
+      if (st.length === 0) {
+        return false
+      }
+      let temp = st.pop()
+      if (ch == ')' && temp != '(') {
+        return false
+      }
+      if (ch == ']' && temp != '[') {
+        return false
+      }
+      if (ch == '}' && temp != '{') {
+        return false
+      }
     }
   }
-
-  console.log("firstmax", firstmax);
-  console.log("secondmax", secondmax)
+  return st.length === 0
 }
 
-let arr = [2,1,0,8,9,10,5,5,6,9,3,4,8]
-secondhighest(arr)
+let s = "(((]))"
+console.log(isValid(s))  // false
+console.log(isValid("((("))  // false
+console.log(isValid("()[]{}"))  // true
+console.log(isValid("([{}])"))  // true
