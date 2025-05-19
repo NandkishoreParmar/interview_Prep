@@ -26,19 +26,24 @@ console.log(secondHighest("abc"));
 
 
 
-function second(arr){
-    let firstlargest = arr[0]
-    let secondlargest = arr[0]
 
-    for (let i=0; i<arr.length; i++){
-        if (arr[i]>firstlargest){
-            secondlargest = firstlargest
-            firstlargest = arr[i]
-        }else if( arr[i]>secondlargest){
-            secondlargest= arr[i]
-        }
+function secondhighest (arr){
+
+  let firstmax = arr[0];
+  let secondmax = arr[0];
+
+  for (let i=1; i<arr.length; i++){
+    if (arr[i] > firstmax){
+      secondmax = firstmax
+      firstmax = arr[i]
+    }else if (arr[i] > secondmax && arr[i] < firstmax){
+      secondmax = arr[i]
     }
-    return secondlargest
+  }
+
+  console.log("firstmax", firstmax);
+  console.log("secondmax", secondmax)
 }
-let arr = [1,2,3,4,5,7,8]
-console.log("second",second(arr)); 
+
+let arr = [2,1,0,8,9,10,5,5,6,9,3,4,8]
+secondhighest(arr)

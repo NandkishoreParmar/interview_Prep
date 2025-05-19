@@ -1,16 +1,22 @@
 
-function charCount(str){
-  let charCount = {}
 
-  for(let char of str){
-    if(charCount[char]){
-      charCount[char]++
-    }
-    else{
-      charCount[char]=1
+function secondhighest (arr){
+
+  let firstmax = arr[0];
+  let secondmax = arr[0];
+
+  for (let i=1; i<arr.length; i++){
+    if (arr[i] > firstmax){
+      secondmax = firstmax
+      firstmax = arr[i]
+    }else if (arr[i] > secondmax && arr[i] < firstmax){
+      secondmax = arr[i]
     }
   }
-  return charCount
+
+  console.log("firstmax", firstmax);
+  console.log("secondmax", secondmax)
 }
-const string = "hello"
-console.log(charCount(string))
+
+let arr = [2,1,0,8,9,10,5,5,6,9,3,4,8]
+secondhighest(arr)

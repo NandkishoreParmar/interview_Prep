@@ -23,7 +23,7 @@ function isPrime(n){
 
 // isPrime(5)
 function primeInRange(n){
-  for (let i=2; i<=n; i++){
+  for (let i=1; i<=n; i++){
      if(isPrime(i)){ 
           process.stdout.write(i + " ")
       
