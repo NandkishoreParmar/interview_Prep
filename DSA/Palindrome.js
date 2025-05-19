@@ -28,15 +28,14 @@ function isPalindrome(num) {
 
  while (left < right) {
   if (numStr[left] !== numStr[right]) {
-      console.log("No, it's not a palindrome")
-      return // If characters don't match, it's not a palindrome
+      // console.log("No, it's not a palindrome")
+      return false// If characters don't match, it's not a palindrome
   }
   left++; 
   right--;
-  // return true; // It's a palindrome
 }
-console.log("Yes, it's a palindrome")
-  // return false; // It's not a palindrome
+// console.log("Yes, it's a palindrome")
+  return true; // It's a palindrome
 }
-isPalindrome("hello") // Output: false
-isPalindrome("racecar") // Output: true
+console.log(isPalindrome("hello")) // Output: false
+console.log(isPalindrome("racecar")) // Output: true
