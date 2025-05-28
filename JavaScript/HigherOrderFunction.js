@@ -41,7 +41,47 @@ let newArr = [2,3,4];
 function sumofN(){
   let sum = newArr.reduce((acc,curr)=> {
     return acc = acc + curr
-  },10)
+  },""  )//10)
   console.log(sum);
 }
 sumofN();
+
+
+console.log("Method Chaining...............................................");
+let products = [
+  {
+    name: "earphone",
+    price: 3500,
+    category:"electronics"
+  },
+  {
+    name: "bluetooth",
+    price: 300,
+    category:"electronics"
+  },{
+    name: "cap",
+    price: 350,
+    category:"cloths"
+  },{
+    name: "shirt",
+    price: 500,
+    category:"cloths"
+  },{
+    name: "earbuds",
+    price: 200,
+    category:"electronics"
+  },
+]
+
+let category = products.filter((el,i,arr)=>{
+  return el.category == "electronics"
+})// .reduce
+
+console.log(category)
+
+let elect = products.filter((el,i,arr)=>{
+  return el.category == "electronics"
+}).reduce((acc,curr)=>{
+  return acc = acc + curr.price
+},0)
+console.log(elect)
