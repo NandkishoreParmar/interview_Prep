@@ -1,4 +1,4 @@
-let condition = true;
+let condition = false;
 const myPromise = new Promise((resolve,reject)=>{
     setTimeout(function() {
         if (condition){
@@ -15,4 +15,6 @@ myPromise.then((result)=>{
 }).
 catch((error)=>{
     console.log(error)
-})
+}).finally(()=>
+    console.log("Run in both cases")
+)
