@@ -1,15 +1,21 @@
-import { useState } from 'react';
-import Parent from './Parent';
+import { ThemeProvider } from './context/ThemeContext';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
+import Prop from './Propdri';
 
 function App() {
-  const [message, setMessage] = useState('Hello from App!');
-
   return (
-    <div>
-      <h1>Simple Props Drilling</h1>
-      <p>App component message: {message}</p>
-      <Parent message={message} />
-    </div>
+    <>
+    <Prop/>
+    <ThemeProvider>
+      <div className="app">
+        <Header />
+        <MainContent />
+        <Footer />
+      </div>
+    </ThemeProvider>
+  </>
   );
 }
 
