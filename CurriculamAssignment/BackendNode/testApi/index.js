@@ -1,26 +1,28 @@
 
 const express = require("express");
 const app = express();
+const fs = require('fs');
 const PORT = 3000;
-
-app.get("/",(req,res)=>{
+app.use(express.json())
+app.get("/home",(req,res)=>{
   res.send("This a loading page")
 })
 
-app.get("/test", (req,res)=>{
-  res.send("Welcome to the node series")
+function ReadFile(){
+  const data = JSON.parse(fs.readFileSync("./db.json","utf-8"));
+  // console.log(courses);
+  const course = data.courses;
+}
+
+app.post("/login",(req,res)=>{
+  // let data = req.body;
+  // console.log("req data", data)
+  res.status(201).json({msg:"login successful",data})
 })
 
-app.get("/about",(req,res)=>{
-  res.send("This is a about page.")
-})
-
-app.get("/home", (req,res)=>{
-  res.send("This is a homepage")
-})
-
-app.get("/contactus",(req,res)=>{
-  res.send("This is a contact us page.")
+app.get("/read-data",(req,res)=>{
+  ReadFile()
+  res.status(200).json({msg:"Data Readed",course})
 })
 
 app.listen(PORT,()=>{
