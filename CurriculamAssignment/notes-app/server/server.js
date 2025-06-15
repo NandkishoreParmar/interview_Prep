@@ -3,6 +3,13 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+// Add this near other imports
+const authRoutes = require('./routes/auth');
+// Add this near other routes
+const noteRoutes = require('./routes/notes');
+app.use('/api/notes', noteRoutes);
+// Add this after middleware setup
+app.use('/api/auth', authRoutes);
 
 const app = express();
 

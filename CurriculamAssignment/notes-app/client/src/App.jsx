@@ -1,17 +1,19 @@
-import { useEffect } from 'react';
-import axios from 'axios';
+// client/src/App.js
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+// import Signup from './pages/Signup';
+import Dashboard from './pages/Dashboard';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
-  useEffect(() => {
-    axios.get('http://localhost:5000/')
-      .then(response => console.log("REsponse",response.data))
-      .catch(err => console.error(err));
-  }, []);
-
   return (
-    <div className="App">
-      <h1>Notes App Frontend</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        {/* <Route path="/signup" element={<Signup />} /> */}
+        <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
