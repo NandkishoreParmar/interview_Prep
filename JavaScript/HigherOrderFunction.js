@@ -2,12 +2,12 @@
 
 // forEach return undefined
 let arr = [1,2,3,4,5,6];
-
+console.log("foreach+++")
 let narr = arr.forEach((el,i,arr)=>
   console.log(el,i,arr)
 )
 
-console.log("+++++++++++++")
+console.log("+++++++++++++ Map")
 //map
 // map create a duplicate copy it doessnot change the original array
 let maparr = arr.map((el,i,arr)=>{
@@ -16,8 +16,9 @@ let maparr = arr.map((el,i,arr)=>{
 console.log(maparr)
 console.log(arr)
 
+console.log("+++ filter")
 // filter 
-let fruits = ["Apple","Banana","Grapes","Papaya"];
+let fruits = ["Apple","Banana","Apple","Grapes","Papaya"];
 
 function searchFruits(fruit){
   let fruit1 = fruits.filter((el,i,arr)=>{
@@ -32,7 +33,7 @@ function searchFruits(fruit){
   }
 
 }
-searchFruits("Apples")
+searchFruits("Apple")
 
 //reduce
 console.log("Reduceeeeeeeeeeeeeeeeeeeee")
