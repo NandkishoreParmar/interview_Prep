@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .c1 { 
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainCont">
+      <div id="cont" class="c1"></div>
+      <button id="btn"> ON </button>
+    </div>
+  </body>
+  <script>
+  const btn = document.getElementById("btn");
+  let button = false;
+  let c1 = document.getElementById("cont");
+
+  btn.addEventListener("click",()=> {
+    button = !button;
+    if(button){
+      btn.innerText = "ON"
+      c1.setAttribute("class","c1");
+    }else{
+      btn.innerText = "OFF"
+      
+      c1.removeAttribute("class")
+    }
+  })
+
+  </script>
+</html>

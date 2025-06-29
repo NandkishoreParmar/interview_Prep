@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="MainCon">
+      <div id="cont"></div>
+      <button id="btn">Show Text</button>
+    </div>
+  </body>
+  <script>
+    const cont = document.getElementById("cont");
+    const btn = document.getElementById("btn");
+
+    let buttonstate = false;
+
+    btn.addEventListener("click",()=>{
+      buttonstate = ! buttonstate;
+      if(buttonstate){
+        cont.innerText = "Test is Visible";
+        btn.innerText = "Hidden Text"
+      }else{
+        cont.innerText = ""
+        btn.innerText = "Show Text"
+      }
+
+    })
+     
+
+  </script>
+</html>

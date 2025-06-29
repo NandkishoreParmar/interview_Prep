@@ -1,12 +1,21 @@
-function flattenArray(arr){
-  return arr.reduce((acc,val)=>{
-    if(Array.isArray(val)){
-      const flattened = flattenArray(val);
-      return acc.concat(flattened)
-    }else{
-      return acc.concat(val)
-    }
-  },[])
+
+let condition = false;
+
+let promise = new Promise((res,rej)=>{
+  setTimeout(()=>{
+if (condition){
+  res("Promise is resolved after 2 sec")
+}else{
+  rej("Promise is rejected after 2 sec")
 }
-const arr = [2,[4,3],4,[5,6]]
-console.log(flattenArray(arr));
+  },2000)
+})
+
+
+promise.then((result)=>{
+  console.log(result)
+}).catch((erro)=>{
+  console.log(erro);
+}).finally(()=>{
+  console.log("Run on both condition")
+})
