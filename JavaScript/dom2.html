@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+    </style>
   </head>
   <body>
     <div id="MainCon">
       <div id="cont"></div>
-      <button id="btn">Show Text</button>
+      <button id="btn" style="display: block;">Show Text</button>
+    </div>
+    <div>
+      <input placeholder="Enter ..." oninput="changeInput(event)" />
+      <p id="par"></p>
     </div>
   </body>
   <script>
@@ -28,6 +34,11 @@
       }
 
     })
+
+    function changeInput(event){
+     const par = document.getElementById("par");
+     par.innerText = event.target.value;
+    }
      
 
   </script>
