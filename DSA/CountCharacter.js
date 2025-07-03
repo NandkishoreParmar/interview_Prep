@@ -13,6 +13,16 @@ function countCharacters(str) {
 // Example Cases
 console.log(countCharacters("llohello")); 
 // Output: { h: 1, e: 1, l: 2, o: 1 }
-
 console.log(countCharacters("aabbbcc")); 
 // Output: { a: 2, b: 3, c: 2 }
+
+let charCount = countCharacters("aaabbbcccdef");
+let outcome = "";
+let duplicateRemove = "";
+for (let key in charCount){
+    outcome += `${key} => ${charCount[key]}, `
+    duplicateRemove += key
+}
+
+console.log(outcome);
+console.log(duplicateRemove);
