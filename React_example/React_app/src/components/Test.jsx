@@ -33,6 +33,7 @@ const Test = () => {
       <button onClick={StartTimer}>Start</button>
       <button onClick={StopTimer}>Pause</button>
       <button onClick={ResetTimer}>Reset</button>
+      <hr></hr>
     </>
   );
 };

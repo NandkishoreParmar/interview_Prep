@@ -44,6 +44,7 @@ const TimerApp = () => {
         <button onClick={pauseTimer}>Pause</button>
         <button onClick={resetTimer}>Reset</button>
       </div>
+      <hr></hr>
     </div>
   );
 };
