@@ -5,12 +5,12 @@ import axios from "axios";
 const FetchAxious = ()=>{
  const [data,setData] = useState([]);
  const [error,setError] = useState(null);
- const [loading,setLoading] = useState(false);
+ const [loading,setLoading] = useState(true);
 
  useEffect(()=>{
  const FetchData = async ()=> {
   try {
-    setLoading(true);
+    // setLoading(true);
     const response = await axios.get("https://fakestoreapi.com/products");
     setData(response.data)
   } catch (error) {

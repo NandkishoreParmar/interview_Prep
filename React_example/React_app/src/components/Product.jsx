@@ -21,7 +21,7 @@ const Product = () => {
     FetchProduct();
   }, []);
 if (loading) return <div> Loading Products....</div>
-  if (error) return <div> Error : {error}</div>
+  if (error) return <div> Error : {error.message}</div>
   return (
     <>
       <h1>Products Lists neww</h1>
