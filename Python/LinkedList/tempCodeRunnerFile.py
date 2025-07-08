@@ -1,0 +1,2 @@
+None:
+#   head = head.next
