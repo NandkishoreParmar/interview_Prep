@@ -1,0 +1,2 @@
+ndMinMax(arr)
+# print(ans)
