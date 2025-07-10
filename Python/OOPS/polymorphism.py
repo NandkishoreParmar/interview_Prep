@@ -1,3 +1,12 @@
+#function Polymorphism
+strr = "hello"
+print(len(strr))
+
+li = [1,2,3]
+print(len(li))
+
+
+# class polymorphism
 class Car:
   def __init__(self,name,model):
     self.name = name
