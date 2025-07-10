@@ -1,6 +1,9 @@
-
+# constructor
+# it is speacial method within a class that gets automatically called when an object is created 
+# it is used to initialize the attributes of the  object 
+# it is written with  __init__
 class Student:
-  def __init__(self,id,name,marks):
+  def __init__(self,id,name,marks):   # __init__  this is a constructor 
     self.id = id
     self.name = name
     self.marks = marks
