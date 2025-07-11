@@ -4,5 +4,4 @@ word = strr.split(" ")
 
 word.reverse()
 res = " ".join(word)
-
 print(res)
