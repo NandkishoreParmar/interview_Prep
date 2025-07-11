@@ -22,7 +22,7 @@ class Plane:
     print("Fly!")
 
 car1 = Car("Audi",2020)
-plane1 = Plane("shera",2030)
+plane1 = Plane("Air India",2015)
 
 for x in (car1,plane1):
   x.move()
