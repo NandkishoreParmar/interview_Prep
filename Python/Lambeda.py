@@ -5,9 +5,9 @@
 s1 = "Hello World"
 
 s2 = lambda func: func.upper()
-num = lambda x: "positve" if x > 0 else "Negative" if x < 0 else "Zero"
 print(s2(s1))
 
+num = lambda x: "positve" if x > 0 else "Negative" if x < 0 else "Zero"
 print(num(2))
 print(num(-3))
 print(num(0))

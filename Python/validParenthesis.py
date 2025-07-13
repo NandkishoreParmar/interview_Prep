@@ -24,3 +24,4 @@ print(valid("()[]{}"))     # True
 print(valid("([{}])"))     # True
 print(valid("([)]"))       # False
 print(valid("(((]))"))     # False
+print(valid(")))"))        # False
