@@ -5,9 +5,11 @@ import Product from "./components/Product";
 import Test from "./components/Test";
 import ReactHandleCount from "./components/ReduxHandle";
 import FetchAxious from "./components/FetchAxious";
+import ContextComp from "./contextAPI/ContextComp";
 const App = ()=>{
   return (
     <>
+    <ContextComp/>
     <FetchAxious />
 <ReactHandleCount />
 <Test/>
