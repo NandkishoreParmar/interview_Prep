@@ -1,21 +1,24 @@
-
-let condition = false;
-
-let promise = new Promise((res,rej)=>{
-  setTimeout(()=>{
-if (condition){
-  res("Promise is resolved after 2 sec")
-}else{
-  rej("Promise is rejected after 2 sec")
+function flattenObject(obj,parentKey=""){
+  return Object.entries(obj).reduce((acc,[key,value])=>{
+    let newKey = parentKey ? `${parentKey}.${key}` : key;
+    if (typeof value === "object" && value !== null && !Array.isArray(value)){
+      const flattened = flattenObject(value,newKey)
+      return {...acc,...flattened}
+    }else{
+      return {...acc,[newKey]:value}
+    }
+  },{})
 }
-  },2000)
-})
 
 
-promise.then((result)=>{
-  console.log(result)
-}).catch((erro)=>{
-  console.log(erro);
-}).finally(()=>{
-  console.log("Run on both condition")
-})
+console.log(flattenObject({
+  x: 10,
+  y: {
+    z: 20,
+    w: {
+      p: 30,
+      q: null
+    }
+  },
+  arr: [1, 2, 3]
+}));
