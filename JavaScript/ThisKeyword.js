@@ -6,7 +6,7 @@ let user = {
   name: "Raju",
   greet : function (){
     // console.log(`Hello ${name}`);  // when name is not defined in global scope so we will get a eror
-    console.log(`Hello ${this.name}`) // this.name is find its outer function 
+    console.log(`Hello ${this.name}`) // this.name is find its outer function  // raju
     // console.log(this)   // inside function this is refers to the respected whole object
   }
 }

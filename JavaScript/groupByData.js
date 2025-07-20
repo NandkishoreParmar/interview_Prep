@@ -1,17 +1,20 @@
-const people = [
-  { name: "Alice", age: 25,id:1 },
-  { name: "Bob", age: 30,id:2 },
-  { name: "charlie", age: 25,id:3 }
+
+let users = [
+    { user: "A", age: 20 },
+    { user: "B", age: 50 },
+    { user: 'C', age: 20 },
+    { user: "D", age: 20 },
 ];
-
-const grouped = people.reduce((acc, curr) => {
-  acc[curr.age] = acc[curr.age] || [];
-  acc[curr.age].push(curr);
-  return acc;
-}, {});
-
-console.log(grouped);
-// { '25': ['Alice', 'Charlie'], '30': ['Bob'] }
+const ans=users.reduce((acc, ele)=>{
+   if(acc[ele.age]!=null){      //This line checks whether a key already exists in the accumulator object acc for the current user's age.acc[ele.age] tries to access the value (an array) for that particular age.!= null checks if that value is not null or undefined.
+       acc[ele.age].push(ele.user);
+   }else{
+       acc[ele.age]=[ele.user];
+   } 
+   return acc;
+   
+},{})
+console.log(ans)
 
 console.log("+++++++++++++++++++++++++++++++++++++++++++++++")
 // What happens internally:
