@@ -9,7 +9,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
       <NoteState>
+        
     <App />
+  
     </NoteState>
     </Provider>
 

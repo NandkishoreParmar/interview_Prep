@@ -15,3 +15,17 @@
 // The event bubbles up from the target to the top (like document).
 
 // Listeners added with addEventListener('click', handler) (default false) run here.
+
+
+// Event Delegation (in simple terms)
+// Event delegation is a technique in JavaScript where you add a single event listener to a parent element instead of adding individual listeners to each child element.
+
+// 🔧 Why use Event Delegation?
+// Better performance (fewer event listeners)
+// Useful for dynamic elements (added after page load)
+// Cleaner and easier to manage code
+
+// 🧠 How it works:
+// You attach a listener to a parent element.
+// When an event happens on a child, it bubbles up to the parent.
+// You check the event.target to know which child was clicked.
