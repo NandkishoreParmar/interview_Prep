@@ -1,11 +1,12 @@
+import Form from './component/FormComponent'
 
-import './App.css'
 function App() {
 
 
   return (
     <>
-     <h1>Hello WOrld</h1>
+     {/* <h1>Hello WOrld</h1> */}
+     <Form/>
     </>
   )
 }

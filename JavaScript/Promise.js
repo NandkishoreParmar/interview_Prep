@@ -1,3 +1,5 @@
+// A promise is an object representing the eventual completion or failure of an asynchronous operation  
+
 let condition = false;
 const myPromise = new Promise((resolve,reject)=>{
     setTimeout(function() {
