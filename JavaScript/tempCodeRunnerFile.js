@@ -1,55 +1,65 @@
 
-const people = [
-  { name: "Alice", age: 30 },
-  { name: "Bob", age: 45 },
-  { name: "Charlie", age: 25 },
-  { name: "Diana", age: 45 },
-  { name: "Eva", age: 40 }
+
+
+
+let promise  = new Promise((res,rej)=>{
+
+  let condtion = false;
+
+  if(condtion){
+    res("promise is resolved")
+  }else{
+    rej("Promise is rejected")
+  }
+})
+
+promise.then((res)=>{
+  console.log(res)
+}).catch((err)=>{
+  console.log("error",err)
+})
+
+
+let original = [1, 2, 3];
+let copy = [...original];
+copy.push(4);
+console.log(original, copy);
+Vijendra Singh
+1:18 PM
+const obj = {
+  name: 'Vijendra',
+  greet: function () {
+    return () => console.log(this.name);
+  }
+};
+const greetFn = obj.greet();
+greetFn();
+You
+1:25 PM
+value by reference
+Gourav Choudhary
+1:25 PM
+console.log([] + []);       // ?
+console.log([] + {});       // ?
+console.log({} + []);       // ?
+console.log({} + {});       // ?
+You
+1:25 PM
+prototype
+Vijendra Singh
+1:28 PM
+question --> takes a word and returns an array of all the letters
+takes a word and returns an array of all the letters
+//  *       not found in the alphabet
+
+composes an array of functions into a function that passes a value through a pipeline of functions
+
+const pipeline = [
+  (num) => num - 1,
+  (num) => num * 10,
+  (num) => `${num} as a string`,
 ];
 
-// 1. Extract all ages and remove duplicates
-const uniqueAges = [...new Set(people.map(p => p.age))];
+const composed = compose(pipeline);
 
-console.log(uniqueAges)
-// 2. Sort in descending order
-uniqueAges.sort((a, b) => b - a);
-console.log(uniqueAges)
-// 3. Get second largest age
-const secondLargestAge = uniqueAges[0];
-
-// 4. Find all people with that age
-const result = people.filter(p => p.age === secondLargestAge);
-
-console.log("Second Largest Age:", secondLargestAge);
-console.log("Person(s) with Second Largest Age:", result);
-
-let users = [
-    { user: "A", age: 20 },
-    { user: "B", age: 50 },
-    { user: 'C', age: 20 },
-    { user: "D", age: 20 },
-];
-
-const ans = users.reduce((acc,el)=>{
-if (acc[el.age]!= null){
-acc[el.age].push(el.user)
-}else{
-acc[el.age] = [el.user]
-}
-return acc
-},{})
-
-console.log(ans)
-
-function flattenArray(arr){
-  return arr.reduce((acc,val)=>{
-   if (Array.isArray(val)){
-    const flattened = flattenArray(val)
-    return acc.concat(flattened)
-   }else{
-    return acc.concat(val)
-   }
-  },[])
-}
-const arr = [1,[2,3,[4,5],6,7],8]
-console.log(flattenArray(arr))
+console.log(composed(4));

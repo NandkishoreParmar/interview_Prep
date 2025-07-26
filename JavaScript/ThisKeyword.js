@@ -1,5 +1,33 @@
+const student = {
+  name: "Akshay",
+  printName:function(){
+    console.log(`called name is ${this.name}`)
+    // cont x : ()=>{
+    //   console.log(this)  // in this arrow function this keyword behave like a normal function like student object becaue it have inside a function that is nested if a single arrow function that time this keyword refers to undefined
+    // }
+  }
+}
+
+student.printName()
+const student2 = {
+  name:"Aman"
+}
+
+// student2.printName()  // it gives error because student2 does'not have printName method  so with the help of call,bind and apply we can use that method also 
+
+// borrowing method from other object 
+student.printName.call(student2)
+student.printName.apply(student2)
 
 
+
+let obj1 = {
+   a:10,
+   x:function(){
+    console.log(this)  // this refers to the obj1
+   }
+}
+obj1.x()
  // this keywords
 let name = "RAm";
 let user = {

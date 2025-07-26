@@ -1,4 +1,4 @@
-
+// A polyfill in JavaScript is a piece of code that provides functionality for features that are not natively supported in certain web browsers. The term "polyfill" is derived from the idea of filling in the gaps or providing a fallback for missing functionalities. The goal is to make modern JavaScript code compatible with older browsers or environments that do not support certain features or APIs.
 // pollyfill for map
 
 Array.prototype.mymap = function(logic){

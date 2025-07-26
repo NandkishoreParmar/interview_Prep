@@ -1,5 +1,5 @@
 function flattenObject(obj, parentKey = "") {
-  return Object.entries(obj).reduce((acc, [key, value]) => {
+  return Object.entries(obj).reduce((acc, [key, value]) => {  
     const newKey = parentKey ? `${parentKey}.${key}` : key;
 
     if (typeof value === "object" && value !== null && !Array.isArray(value)) {
