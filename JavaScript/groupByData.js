@@ -1,3 +1,21 @@
+const people = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 32 },
+  { name: "Charlie", age: 25 },
+  { name: "David", age: 32 },
+  { name: "Eva", age: 28 },
+];
+
+const ans1 = people.reduce((acc, val) => {
+  if (acc[val.age]) {
+    acc[val.age].push(val);
+  } else {
+    acc[val.age] = [val]; // initialize with array
+  }
+  return acc;
+}, {}); // should be an object
+
+console.log(ans1);
 
 let users = [
     { user: "A", age: 20 },

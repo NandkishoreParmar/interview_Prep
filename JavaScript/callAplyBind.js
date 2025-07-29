@@ -14,3 +14,4 @@ printFullName.apply(user1,["Indore","M.P"])
 
 let binding = printFullName.bind(user1,"Bhopal","M.P")
 binding()
+

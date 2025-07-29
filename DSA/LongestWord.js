@@ -1,10 +1,9 @@
-const { sample } = require("lodash");
 
 
 function LongestWord(sentence){
   let words = sentence.split(" ");
   // let sort = words.sort((a,b)=> a.length-b.length)
-  console.log(sort)
+  // console.log(sort)
   // console.log(words)
   let max = 0
   for (let word of words){

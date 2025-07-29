@@ -7,7 +7,6 @@ Promise.all()
 //   .then(values => console.log(values))
 //   .catch(err => console.log(err));
 
-
 Promise.allSettled()
 // Waits for all promises to complete, regardless of fulfilled or rejected.
 // Returns a single promise that resolves to an array of result objects, each indicating status ('fulfilled' or 'rejected') and value or reason.
