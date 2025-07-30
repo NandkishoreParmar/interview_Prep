@@ -6,6 +6,7 @@ import Test from "./components/Test";
 import ReduxHandleCount from "./components/ReduxHandle";
 import FetchAxious from "./components/FetchAxious";
 import ContextComp from "./contextAPI/ContextComp";
+import HocExample from "./components/HigherOrderCompo";
 
 const App = ()=>{
   return (
@@ -17,6 +18,7 @@ const App = ()=>{
     <TodoList/>
 {/* <SimpleTimer/> */}
     <Product/>
+    <HocExample/>
     </>
   )
 }

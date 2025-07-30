@@ -1,14 +1,23 @@
+import React, { useRef } from "react";
+// import './test.css'
+const Test = ()=>{
+
+  const count = useRef("");
+ const paragraphStyle = {
+  color:"red",
+  border:"1px solid white"
+ }
+
+ const handleChange = ()=>{
+  alert(count.current.value)
+ }
 
 
-let promise = new Promise((res,rej)=>{
+  return (<>
+  <h1 style={paragraphStyle}>This is test component</h1>
+  {/* <p>{count}</p> */}
+  <input type="text" ref={count} placeholder="Enter " onChange={handleChange}  />
+  </>)
+}
 
-  let condition = true;
-  if (condition){
-    res("Promise is reolved")
-  }else{
-    rej("Promise is rejected")
-  }
-})
-
-promise.then((res)=> console.log(res))
-.catch((err)=> console.log(err))
+export default Test;
