@@ -7,5 +7,5 @@ function groupAnagrams(words) {
   }
   return Object.values(map);
 }
-let input = ["cat", "tac", "act", "bat", "tab"];
+let input = ["cat", "tac", "bat", "tab", "act"];
 console.log(groupAnagrams(input))

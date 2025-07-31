@@ -9,7 +9,7 @@ function findAlpha(str) {
   console.log("using include", output);
 }
 
-findAlpha("gourav choudhary");
+
 
 function withoutInclude(str) {
   let alphabet = "abcdefghijklmnopqrstuvwxyz";

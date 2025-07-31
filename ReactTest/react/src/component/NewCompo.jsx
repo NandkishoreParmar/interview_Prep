@@ -1,6 +1,9 @@
-import React, { useState } from "react";
-
+import React, { useState,useContext } from "react";
+// import { useContext } from "react";
+import counterContext from "./context/counterContext";
 const NewCompo = () => {
+
+  const {count,setCount} = useContext(counterContext);
 const [loginInfo,setLoginInfo] = useState({
   email:"",
   password:""
@@ -42,6 +45,9 @@ try {
     <>
       <div style={{height:"100vh", width:"100%" , display:"grid", placeItems:"center"}}>
         <div style={{width:"250px", border:"1px solid gray" , padding:"20px"}}>
+
+          <p>Counter: {count}</p>
+          <button onClick={()=> setCount(count+1)}>Increment</button>
           <h1 style={{display:"flex",justifyContent:"center"}}>Login</h1>
           <form onSubmit={handleSubmiit}  style={{display:"flex", flexDirection:"column", margin:"10px"}} >
             <div style={{display:"flex", flexDirection:"column", marginBottom:"5px"}} >

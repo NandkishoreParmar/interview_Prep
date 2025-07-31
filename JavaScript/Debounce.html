@@ -21,8 +21,8 @@
   const debounce = (fn,d)=>{
     let timer;
     return function(){
-      let context = this,
-      args = arguments;
+      let context = this;
+      let args = arguments;
       clearTimeout(timer)
       timer =  setTimeout(()=>{
         getData.apply(context,arguments)
@@ -30,5 +30,29 @@
     }
   }
   const betterFunction = debounce(getData,300)
+
+
+  let count1 = 0;
+
+const getData2 = () => {
+  console.log("Counting", count1++);
+};
+
+const throttle = (fn, delay) => {
+  let last = 0;
+  return function () {
+    let context = this;
+    let args = arguments;
+    let now = new Date().getTime();
+    if (now - last >= delay) {
+      last = now;
+      fn.apply(context, args);
+    }
+  };
+};
+
+const betterFunction2 = throttle(getData2, 300);
+
+
 </script>
 </html>
