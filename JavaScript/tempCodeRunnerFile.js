@@ -1,11 +1,12 @@
 function Composed(pipeline){
-  return function (num){
-    for(let fun of pipeline){
+  return function(num){
+    for (let fun of pipeline){
       num = fun(num)
     }
     return num
   }
 }
+
 
 const pipeline = [
   (num) => num - 1,
