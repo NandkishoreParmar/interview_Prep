@@ -1,0 +1,95 @@
+1. how you know about byldd?
+
+I came to know about Byldd around 6 months ago when my friend Vijendra got placed there. He shared his positive experience about the company, its culture, and the kind of real-world projects they work on. His experience really caught my interest, so I explored more about the company on my own.
+
+After doing some research, I was genuinely impressed with how Byldd helps startups build and launch their products efficiently, focusing only on what’s truly needed. That’s when I realized it’s the kind of environment I’d love to be part of.
+
+2.why you want to join byldd?
+I want to join Byldd because my skills match the kind of work you do. I already have 4 months of experience as a full stack developer at Sports For All, where I worked on both frontend and backend. I really enjoy building real products that solve problems.
+
+I also like how Byldd helps startups launch their products quickly without wasting time or money. It’s a fast-paced and practical environment where I know I’ll learn a lot and grow as a developer. That’s why I’m excited to be a part of the team.
+
+3.how do you see yourself in 5 year?
+In five years, I see myself growing both technically and professionally. I want to become a highly skilled developer who can take on challenging projects, contribute innovative ideas, and mentor junior developers.
+
+At the same time, I’d love to take on more responsibility, possibly leading a team or working closely with clients to deliver impactful solutions.
+
+I’m excited about the opportunity to grow with Byldd and help the company achieve its mission of building successful startups while developing my own skills along the way.
+
+4.What motivates you to work every day?
+Answer:
+"I’m motivated by the opportunity to solve challenging problems and make a real impact with my work. Building applications that users find valuable and enjoy using gives me a sense of accomplishment.
+
+At Byldd, the chance to help startups succeed and work in a collaborative environment would be a huge motivator for me, as I love contributing to projects that drive real-world results."
+
+5.How do you handle feedback?
+Answer:
+"I see feedback as an opportunity to grow and improve. In my previous role, I received constructive feedback on improving my code optimization. I took it seriously, researched best practices, and applied what I learned to future projects, resulting in more efficient code.
+
+I value open communication and appreciate when others take the time to help me improve."
+
+6.what is your strength?
+My greatest strength is my ability to learn quickly and adapt to new challenges. For example, in a recent project, I had to pick up a new technology within a tight deadline to meet the project requirements, and I successfully implemented it without compromising quality.
+
+I’m also a strong team player and communicate well, which helps in collaborative environments like the one at Byldd
+
+7.what is your weakness?
+One area I’m working to improve is trying to do everything on my own. Since I’m still early in my career, I sometimes take too much responsibility to prove myself or make sure everything is right. But I’ve realized that teamwork and trusting others is also very important. So now, I’m learning to communicate better, ask for help when needed, and work more closely with my team. This is helping me learn faster and become a better team player.
+or///
+
+One area I'm working to improve is speaking up during meetings or discussions. Sometimes, I hesitate to share my ideas because I feel others might have more experience than me. But I’ve realized that every idea can add value, and asking questions is also part of learning. So I’m now trying to be more confident, share my thoughts, and participate more actively. It’s helping me build better communication skills and grow faster as a developer.
+
+8.what do you see in yourself in 5 years?
+In five years, I see myself growing both technically and professionally. I want to become a highly skilled developer who can take on challenging projects, contribute innovative ideas, and mentor junior developers.
+
+At the same time, I’d love to take on more responsibility, possibly leading a team or working closely with clients to deliver impactful solutions.
+
+I’m excited about the opportunity to grow with Byldd and help the company achieve its mission of building successful startups while developing my own skills along the way.
+
+9.What motivates you to work every day?
+Answer:
+"I’m motivated by the opportunity to solve challenging problems and make a real impact with my work. Building applications that users find valuable and enjoy using gives me a sense of accomplishment.
+
+At Byldd, the chance to help startups succeed and work in a collaborative environment would be a huge motivator for me, as I love contributing to projects that drive real-world results."
+
+10.How do you prioritize tasks when you have multiple deadlines?
+Answer:
+"I start by understanding the scope and urgency of each task. Then, I break them into smaller milestones and use tools like Trello or a to-do list to keep track of progress.
+
+For example, in a recent project, I had overlapping deadlines for two features. I prioritized based on the delivery timeline and team dependencies, ensuring both were completed on time without compromising quality."
+
+11.How do you work in a team?
+Answer:
+"I believe in clear communication and collaboration. I make sure to actively listen to my teammates, share my ideas, and help others when needed.
+
+In a recent project, I worked closely with designers and backend developers to build a seamless user interface. We communicated daily, shared updates, and resolved issues together, which helped us deliver the project successfully."
+
+12.What kind of work environment helps you thrive?
+Answer:
+"I thrive in an environment that encourages learning, open communication, and collaboration. I enjoy working with a team where I can contribute ideas, learn from others, and continuously grow.
+
+At Byldd, the focus on lean, fast-paced development and the collaborative nature of helping startups succeed feels like the perfect environment for me."
+
+13.How do you handle conflict in a team?
+Answer:
+"I believe in addressing conflicts through open and respectful communication. For example, if there’s a disagreement over how to approach a task, I’d suggest discussing the pros and cons of each approach and finding a solution that benefits the project.
+
+In one instance, I resolved a conflict between two teammates by mediating the discussion and suggesting a compromise that worked for everyone."
+
+14.What do you like to do outside of work?
+Answer:
+"I enjoy exploring new technologies and working on personal projects to improve my skills. I also like reading about startups and product development to understand industry trends.
+
+When I’m not working, I enjoy spending time outdoors, watching tech videos, or playing strategy-based games."
+
+15.Describe a time when you solved a problem under a tight deadline.
+"Once, a project was delayed because of a bug just before the deadline. I stayed calm and worked with my team to find the issue. We decided to fix only the critical part first so we could still meet the deadline. The full fix was added later, and the project was delivered on time."
+
+16.What motivates you as a developer?
+"I like seeing the impact of my work, whether it’s making users’ lives easier or helping a team work better. I also enjoy solving problems and learning new things, which keeps me excited about coding."
+
+
+Asking Question?
+1.What kind of support or mentorship does the team offer for new developers joining the company?
+2.What opportunities does Byldd offer for developers to learn and grow within the company?
+3.What does a typical day look like for a developer at Byldd?
